@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap");
 :root {
   --color-primary: #FDD968;
   --color-secondary:#563F2F;
@@ -23,7 +24,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Amiri', 'Kaisei Tokumin';
+  font-family: "Amiri", "Noto Serif JP";
   color: var(--color-secondary);
 }
 
@@ -40,12 +41,18 @@ ul {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--color-secondary);
 }
 a:hover {
-  text-decoration: none;
   color: var(--color-secondary);
+}
+a.btn, a.nav-link {
+  text-decoration: none;
+}
+
+.work-box a {
+  text-decoration: none;
 }
 
 .hover-secondary:hover {
@@ -65,7 +72,6 @@ hr {
     margin-bottom: 0px;
     border-width: 2px;
   }
-
   .btn {
     width: auto;
   }
@@ -121,8 +127,8 @@ hr {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -133,8 +139,8 @@ hr {
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
@@ -202,7 +208,7 @@ input:checked + .slider:before {
 }
 
 .drop-shadow {
-  filter: drop-shadow(1px 1px 5px #00000030);
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.1882352941));
 }
 
 .inactive {
@@ -238,11 +244,9 @@ td.tbl-year {
     padding-bottom: 0;
     margin-top: 30px;
   }
-
   .section-title-sub {
     margin-bottom: 0px;
   }
-
   .work-more-content {
     top: 0;
     left: 0;
@@ -262,7 +266,7 @@ progress[value] {
 }
 
 progress[value]::-webkit-progress-bar {
-  background-color: #FFFFFB50;
+  background-color: rgba(255, 255, 251, 0.3137254902);
   border-radius: 20px;
 }
 
@@ -293,7 +297,7 @@ form {
 /* navbar */
 .navbar-dark {
   background-color: var(--color-secondary);
-  filter: drop-shadow(1px 1px 5px #00000030);
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.1882352941));
 }
 
 .navbar-dark .navbar-toggler-icon {
@@ -363,7 +367,7 @@ form {
 .card {
   border: solid 3px var(--color-primary);
   border-radius: 12px;
-  filter: drop-shadow(1px 1px 5px #00000030);
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.1882352941));
 }
 .card:hover {
   border: solid 3px var(--color-primary-darker);
@@ -394,12 +398,10 @@ form {
     white-space: nowrap;
     overflow: hidden;
   }
-
   .card-text, .card-title {
     white-space: nowrap;
     overflow: hidden;
   }
-
   .card-body {
     padding: 1rem;
   }
@@ -420,6 +422,6 @@ footer #footer-name {
   max-width: 180px;
 }
 
-/* scss kaedei$ sass scss/style.scss:scss/style.css --style expanded --watch */
+/* $ sass scss/style.scss:scss/style.css --style expanded --watch */
 
 /*# sourceMappingURL=style.css.map */
